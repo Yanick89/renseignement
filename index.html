@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>les formulaires</title>
+</head>
+<body  widht="400px" bgcolor="#0091b0">
+	<main>
+		<form method="post" action="traitement.php" enctype="mutltipart/form-data">
+			<fieldset>
+				<legend> Civilité</legend>
+				<p> sexe:<br/>
+					<input type="radio"	name="sexe" value="femme" id="femme">
+					<label for="sexe" id="femme">Femme:</label>
+					<input type="radio" name="sexe" value="Homme" id="homme">
+					<label for="homme">Homme</label>
+				</p>
+				<p>
+					<label for="nom_prenom">Nom et Prénom:</label>
+					<input placeholder="ex:NDAMI Pharaon" id="nom_prenom" type="texte"  id="date_naissance" name="civilité" required="required" rows="30" cols="20">
+					<label for="date_naissance">Date de naissance:</label>
+					<input type="date"  placeholder="ex: @14/05/2020"  maxlength="10" 
+					name="civilité" required="required" ><br/>	
+					<label for="lieu">Lieu de naissance:</label>
+					<input placeholder="ex: Libreville" type="texte" id="lieu" name="civilité" tabindex="3" >
+					<label for="adresse" id="adresse">Adresse:</label>
+					<input placeholder="ex:okala (ecole)" type="texte" name="civilité" required="required" ><br/>
+					
+					<label for="email" id="email">Adresse E-mail:</label>
+					<input placeholder="votrenomexemple@gmail.com" type="email" name="email" required="required" >
+				</p>
+				
+			</fieldset>	
+			<fieldset>
+				<legend>Sécutité</legend>
+				<p>
+					<label for="password">Creer votre mot de passe:</label>
+					<input type="password" id="password" name="password">
+					<label for="password">Confirmez le passe</label>
+					<input type="password" id="password" name="password">	
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Formation</legend>
+				<p>
+					<label for="diplome">Dernier diplôme:</label>
+					<select name="diplome" id="diplome" default="Bac"3">
+						<option value="aucun"  selected="Bac 3">Aucun</option>
+						<option value="cep">Cep</option>
+						<option value="bepc">Bepc</option>
+						<option value="bac">Bac</option>
+						<option value="bac_2">Bac"2"</option>
+						<option value="bac_3" selected="bac 3">Bac"3"</option>
+						<option value="master">Master</option>
+						<option value="master_2">Master"2"</option>
+						<option value="doctorat">Doct</option>
+					</select>
+				</p>
+				<p> Cochez vos centres d'intérêt:<br/>
+					<label for="Sport" id="Sport">Sport:</label>
+					<input type="checkbox" name="interet[]" id="Sport">
+					<label for="documentaire" id="documentaire">Documentaire:</label>
+					<input type="checkbox" name="interet[]" id="documentaire"><br>
+					<label for="lecture" id="lecture">Lecture:</label>
+					<input type="checkbox" name="interet"[] id="lecture">
+					<label for="music" id="music">Musique:</label>
+					<input type="checkbox" name="interet[]" id="lecture">
+					<label for="jeux_vidéos">Jeux_vidéo:</label>
+					<input type="checkbox" name="interet[]1" id="music">
+					<label for="Balade">Balade:</label>
+					<input type="checkbox" name="interet"[] id="Balade">
+					<label for="cuisine">Cusine:</label>
+					<input type="checkbox" name="interet"[] id="cuisine">
+
+				</p>
+			</fieldset>
+			<fieldset >
+				<legend>Commentaire</legend>
+				<p>
+					<label for="commentaire"></label>
+					<textarea placeholder="Saisissiez votre commentaire" rows="10" cols="50" name="texte" id="commentaire"></textarea><br/>
+					<label for="condition">J'accepte</label>
+					<input type="checkbox" name="condition" id="condition">
+					<input type="submit" value="Envoyer">
+				</p>
+			</fieldset>
+			
+		</form>	
+	</main>
+
+</body>
+</html>
