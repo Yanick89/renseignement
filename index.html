@@ -12,25 +12,28 @@
 		<form method="post" action="traitement.php" enctype="mutltipart/form-data">
 			<fieldset>
 				<legend> Civilité</legend>
+				<p>
+					<label for="nom_prenom">Nom(s) et Prénom(s):</label>
+					<input placeholder="ex:NDAMI Pharaon" id="nom_prenom" type="texte"  id="date_naissance" name="civilité" required="required" rows="30" cols="20"></br>
+
+					<label for="date_naissance">Date de naissance:</label>
+					<input type="date"  placeholder="ex: @14/05/2020"  maxlength="10" 
+					name="civilité" required="required" ><br/>	
+
+					<label for="lieu">Lieu de naissance:</label>
+					<input placeholder="ex: Libreville" type="texte" id="lieu" name="civilité" tabindex="3"></br>
+
+					<label for="adresse">Adresse:</label>
+					<input placeholder="ex:okala (ecole)" type="texte" id="adresse" name="civilité" required="required"><br/>
+					
+					<label for="email">Adresse E-mail:</label>
+					<input placeholder="votrenomexemple@gmail.com" id="email" type="email" name="email" required="required" >
+				</p>
 				<p> sexe:<br/>
 					<input type="radio"	name="sexe" value="femme" id="femme">
 					<label for="sexe" id="femme">Femme:</label>
 					<input type="radio" name="sexe" value="Homme" id="homme">
 					<label for="homme">Homme</label>
-				</p>
-				<p>
-					<label for="nom_prenom">Nom et Prénom:</label>
-					<input placeholder="ex:NDAMI Pharaon" id="nom_prenom" type="texte"  id="date_naissance" name="civilité" required="required" rows="30" cols="20">
-					<label for="date_naissance">Date de naissance:</label>
-					<input type="date"  placeholder="ex: @14/05/2020"  maxlength="10" 
-					name="civilité" required="required" ><br/>	
-					<label for="lieu">Lieu de naissance:</label>
-					<input placeholder="ex: Libreville" type="texte" id="lieu" name="civilité" tabindex="3" >
-					<label for="adresse" id="adresse">Adresse:</label>
-					<input placeholder="ex:okala (ecole)" type="texte" name="civilité" required="required" ><br/>
-					
-					<label for="email" id="email">Adresse E-mail:</label>
-					<input placeholder="votrenomexemple@gmail.com" type="email" name="email" required="required" >
 				</p>
 				
 			</fieldset>	
@@ -38,9 +41,9 @@
 				<legend>Sécutité</legend>
 				<p>
 					<label for="password">Creer votre mot de passe:</label>
-					<input type="password" id="password" name="password">
-					<label for="password">Confirmez le passe:</label>
-					<input type="password" id="password" name="password">	
+					<input type="password" id="password" name="password"></br>
+					<label for="pass">Confirmez le passe:</label>
+					<input type="password" id="pass" name="password">	
 				</p>
 			</fieldset>
 			<fieldset>
@@ -62,16 +65,22 @@
 				<p> Cochez vos centres d'intérêt:<br/>
 					<label for="Sport" id="Sport">Sport:</label>
 					<input type="checkbox" name="interet[]" id="Sport">
+
 					<label for="documentaire" id="documentaire">Documentaire:</label>
 					<input type="checkbox" name="interet[]" id="documentaire"><br>
+
 					<label for="lecture" id="lecture">Lecture:</label>
 					<input type="checkbox" name="interet"[] id="lecture">
+
 					<label for="music" id="music">Musique:</label>
 					<input type="checkbox" name="interet[]" id="lecture">
+
 					<label for="jeux_vidéos">Jeux_vidéo:</label>
 					<input type="checkbox" name="interet[]1" id="music">
+
 					<label for="Balade">Balade:</label>
 					<input type="checkbox" name="interet"[] id="Balade">
+
 					<label for="cuisine">Cusine:</label>
 					<input type="checkbox" name="interet"[] id="cuisine">
 
